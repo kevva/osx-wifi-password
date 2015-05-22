@@ -28,7 +28,6 @@
     "wifi-name": "^1.0.9"
   },
   "devDependencies": {
-    "ava": "0.0.4",
-    "mocha": "*"
+    "ava": "^0.0.4"
   }
 }
