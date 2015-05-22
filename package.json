@@ -1,0 +1,34 @@
+{
+  "name": "osx-wifi-password",
+  "version": "1.0.0",
+  "description": "Get current wifi password on OS X",
+  "license": "MIT",
+  "repository": "kevva/osx-wifi-password",
+  "author": {
+    "name": "Kevin Martensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "network",
+    "osx",
+    "password",
+    "wifi"
+  ],
+  "dependencies": {
+    "wifi-name": "^1.0.9"
+  },
+  "devDependencies": {
+    "ava": "0.0.4",
+    "mocha": "*"
+  }
+}
