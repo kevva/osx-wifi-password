@@ -4,7 +4,7 @@ var wifiName = require('wifi-name');
 
 function getPassword(ssid, cb) {
 	var cmd = 'security';
-	var args = ['find-generic-password', '-ga', ssid];
+	var args = ['find-generic-password', '-D', 'AirPort network password', '-ga', ssid];
 	var ret;
 
 	execFile(cmd, args, function (err, stdout, stderr) {
