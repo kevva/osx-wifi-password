@@ -6,7 +6,7 @@ function getPassword(ssid, cb) {
 	var cmd = 'security';
 	var args = ['find-generic-password', '-D', 'AirPort network password', '-wa', ssid];
 
-	execFile(cmd, args, function (err, stdout) {
+	execFile(cmd, args, function (err, stdout, stderr) {
 		stdout = stdout.trim();
 
 		if (err && /The specified item could not be found in the keychain/.test(err.message)) {
@@ -15,6 +15,11 @@ function getPassword(ssid, cb) {
 
 		if (err) {
 			cb(err);
+			return;
+		}
+
+		if (stderr) {
+			cb(new Error(stderr));
 			return;
 		}
 
