@@ -1,6 +1,6 @@
 {
   "name": "osx-wifi-password",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get current wifi password on OS X",
   "license": "MIT",
   "repository": "kevva/osx-wifi-password",
